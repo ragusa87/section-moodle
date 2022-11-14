@@ -1,37 +1,11 @@
 <h1 align="center">
-  😍 + 🚀
-  <br>Spaceship Section<br>
+  🎓 + 🚀
+  <br>Moodle Section<br>
 </h1>
 
 <h4 align="center">
-  A <a href="https://template.com" target="_blank">Foobar</a> section for Spaceship prompt
+  A <a href="https://moodle.org" target="_blank">Moodle</a> section for Spaceship prompt
 </h4>
-
-<p align="center">
-  <a href="https://github.com/spaceship-prompt/spaceship-section/releases">
-    <img src="https://img.shields.io/github/v/release/spaceship-prompt/spaceship-section.svg?style=flat-square"
-      alt="GitHub Release" />
-  </a>
-
-  <a href="https://github.com/spaceship-prompt/spaceship-section/actions">
-    <img src="https://img.shields.io/github/workflow/status/spaceship-prompt/spaceship-section/ci?style=flat-square"
-      alt="GitHub Workflow Status" />
-  </a>
-
-  <a href="https://twitter.com/SpaceshipPrompt">
-    <img src="https://img.shields.io/badge/twitter-%40SpaceshipPrompt-00ACEE.svg?style=flat-square"
-      alt="Spaceship Twitter" />
-  </a>
-
-  <a href="https://discord.gg/NTQWz8Dyt9">
-    <img
-      src="https://img.shields.io/discord/859409950999707668?label=discord&logoColor=white&style=flat-square"
-      alt="Chat on Discord"
-    />
-  </a>
-</p>
-
-Current Foobar version, through foobar (`😍`).
 
 ## Installing
 
@@ -42,70 +16,70 @@ You need to source this plugin somewhere in your dotfiles. Here's how to do it w
 Execute this command to clone this repo into Oh-My-Zsh plugin's folder:
 
 ```zsh
-git clone https://github.com/spaceship-prompt/spaceship-section.git $ZSH_CUSTOM/plugins/spaceship-section
+git clone https://github.com/ragusa87/section-moodle.git $ZSH_CUSTOM/plugins/section-moodle
 ```
 
-Include `spaceship-section` in Oh-My-Zsh plugins list:
+Include `section-moodle` in Oh-My-Zsh plugins list:
 
 ```zsh
-plugins=($plugins spaceship-section)
+plugins=($plugins section-moodle)
 ```
 
 ### [zplug]
 
 ```zsh
-zplug "spaceship-prompt/spaceship-section"
+zplug "ragusa87/section-moodle"
 ```
 
 ### [antigen]
 
 ```zsh
-antigen bundle "spaceship-prompt/spaceship-section"
+antigen bundle "ragusa87/section-moodle"
 ```
 
 ### [antibody]
 
 ```zsh
-antibody bundle "spaceship-prompt/spaceship-section"
+antibody bundle "ragusa87/section-moodle"
 ```
 
 ### [zinit]
 
 ```zsh
-zinit light "spaceship-prompt/spaceship-section"
+zinit light "ragusa87/section-moodle"
 ```
 
 ### [zgen]
 
 ```zsh
-zgen load "spaceship-prompt/spaceship-section"
+zgen load "ragusa87/section-moodle"
 ```
 
 ### [sheldon]
 
 ```toml
-[plugins.spaceship-section]
-github = "spaceship-prompt/spaceship-section"
+[plugins.section-moodle]
+github = "ragusa87/section-moodle"
 ```
 
 ### Manual
 
 If none of the above methods works for you, you can install Spaceship manually.
 
-1. Clone this repo somewhere, for example to `$HOME/.zsh/spaceship-section`.
+1. Clone this repo somewhere, for example to `$HOME/.zsh/section-moodle`.
 2. Source this section in your `~/.zshrc`.
 
 ### Example
 
 ```zsh
 mkdir -p "$HOME/.zsh"
-git clone --depth=1 https://github.com/spaceship-prompt/spaceship-section.git "$HOME/.zsh/spaceship-section"
+git clone --depth=1 https://github.com/ragusa87/section-moodle.git "$HOME/.zsh/section-moodle"
 ```
 
 For initializing prompt system add this to your `.zshrc`:
 
 ```zsh title=".zshrc"
-source "~/.zsh/spaceship-section/spaceship-section.plugin.zsh"
+source "~/.zsh/section-moodle/section-moodle.plugin.zsh"
 ```
 
 ## Usage
@@ -113,20 +87,21 @@ source "~/.zsh/spaceship-section/spaceship-section.plugin.zsh"
 After installing, add the following line to your `.zshrc` in order to include Ember section in the prompt:
 
 ```zsh
-spaceship add foobar
+spaceship add section-moodle
 ```
 
 ## Options
 
-This section is shown only in directories within a foobar context.
+This section is shown only in directories within a Moodle context.
 
-| Variable                   |              Default               | Meaning                              |
-| :------------------------- | :--------------------------------: | ------------------------------------ |
-| `SPACESHIP_FOOBAR_SHOW`   |               `true`               | Show current section                 |
-| `SPACESHIP_FOOBAR_PREFIX` | `$SPACESHIP_PROMPT_DEFAULT_PREFIX` | Prefix before section                |
-| `SPACESHIP_FOOBAR_SUFFIX` | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after section                 |
-| `SPACESHIP_FOOBAR_SYMBOL` |               `😍·`                | Character to be shown before version |
-| `SPACESHIP_FOOBAR_COLOR`  |             `yellow`               | Color of section                     |
+| Variable                   |              Default               | Meaning                             |
+|:---------------------------|:----------------------------------:|-------------------------------------|
+| `SPACESHIP_MOODLE_SHOW`    |               `true`               | Show section                        |
+| `SPACESHIP_MOODLE_ASYNC`   |               `true`               | Render section asynchronously       |
+| `SPACESHIP_MOODLE_PREFIX`  | `$SPACESHIP_PROMPT_DEFAULT_PREFIX` | Section's prefix                    |
+| `SPACESHIP_MOODLE_SUFFIX`  | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Section's suffix                    |
+| `SPACESHIP_MOODLE_SYMBOL`  |               `🎓 `                | Symbol displayed before the section |
+| `SPACESHIP_MOODLE_COLOR`   |               `blue`               | Section's color                     |
 
 ## Contributing
 
